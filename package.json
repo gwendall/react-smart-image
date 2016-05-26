@@ -1,9 +1,9 @@
 {
   "name": "react-smart-image",
-  "version": "0.0.2",
+  "version": "0.0.19",
   "description": "A smart img component for React",
-  "main": "lib/server.js",
-  "browser": "lib/browser.js",
+  "main": "dist/server.js",
+  "browser": "dist/client.js",
   "author": "Gwendall Esnault <gwendall.esnault@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/gwendall/react-smart-image",
@@ -33,7 +33,7 @@
     "underscore": "^1.8.3"
   },
   "scripts": {
-    "build": "jsx lib/client.jsx > lib/client.js && jsx lib/server.jsx > lib/server.js",
+    "build": "jsx src/client.jsx > dist/client.js && jsx src/server.jsx > dist/server.js",
     "prepublish": "npm run build"
   }
 }
